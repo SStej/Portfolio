@@ -6,11 +6,15 @@ My name is Sakar, I am a data analyst with experience using various data tools t
 
 In this portfolio, I have included some of my past projects and the best practices that showcase my technical skills as well as analytical capability. You will find documents, workbooks, presentation slides, and dashboards created with SQL, Power BI, Excel and PowerPoint. These projects demonstrate my ability to organize, analyze, and present data in a clear and visually appealing way, making it easy for anyone to understand and make informed decisions.
 
+Technical Skills: Excel(VBA, Macros and Office Script), MySQL, Alteryx, Power BI, Python (Pandas, Numpy, Matplotlib)
+
 # Table of Contents
   - [Project Experience](https://github.com/SStej/Portfolio/blob/main/README.md#project-experience)
   - [Best Practices](https://github.com/SStej/Portfolio/edit/main/README.md#best-practices)
   - [Frameworks and Tools](https://github.com/SStej/Portfolio/edit/main/README.md#frameworks-and-tools)
     
 ## Project Experience
+
 ## Best Practices
+
 ## Frameworks and Tools
