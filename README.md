@@ -8,6 +8,13 @@ In this portfolio, I have included some of my past projects and the best practic
 
 Technical Skills: Excel(VBA, Macros and Office Script), MySQL, Alteryx, Power BI, Python (Pandas, Numpy, Matplotlib)
 
+## Certifications
+  - Microdoft Certified Power BI Data Analyst
+  - Alterix Designer Core Certification
+  - Project Management Certification: PMI Certified Associate Project Manager
+
+![](https://github.com/SStej/Portfolio/blob/6a2068249107e6340d4573dbf8e29a5279dfff67/Assets/Badges.png)
+
 # Table of Contents
   - [Project Experience](https://github.com/SStej/Portfolio/blob/main/README.md#project-experience)
   - [Best Practices](https://github.com/SStej/Portfolio/edit/main/README.md#best-practices)
