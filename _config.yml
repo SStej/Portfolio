@@ -3,4 +3,6 @@ logo: Assets/Icon photo.jpeg
 description: Excel(VBA, Macros and Office Script), MySQL, Alteryx, Power BI, Python (Pandas, Numpy, Matplotlib)
 show_downloads: true
 theme: jekyll-theme-minimal
+plugins:
+  - jemoji
 
