@@ -71,3 +71,6 @@ After compiling data from the electricity bills, water bills and the waste recyc
 
 # Best Practices
 
+Over the period that i have worked using Power BI, I have collected some best practices to implement before and during the develppment process. 
+I have complied all of them in this repo
+
