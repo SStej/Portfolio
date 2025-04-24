@@ -1,15 +1,31 @@
 # Power BI Best Practices
 
-## Power BI Report Development Process
+## Table of contents
+|   |
+|-----|
+|[1. Power BI Report Development Process](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#1-power-bi-report-development-process)|
+|[2. Power BI Confusing Vocabulary for Users](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#2-power-bi-confusing-vocabulary-for-users)|
+|[3. Report Wireframing](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#3-report-wireframing)|
+|[4. Data Cleaning](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#4-data-cleaning) |
+|[5. Query Folding](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#5-query-folding)|
+|[6. Datetable](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#6-datetable)|
+|[7. Timezone](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#7-timezone)|
+|[8. Connection Modes](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#8-connection-modes) |
+|[9. Roles & access in Workspace/Reports/Semantic models/ App](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#9-roles--access-in-workspacereportssemantic-models-app)|
+|[10. Licenses – Where to publish reports for different license consumers?](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#10-licenses--where-to-publish-reports-for-different-license-consumers)|
+|[11. Multiple Excel Merging](https://github.com/SStej/Portfolio/edit/main/Power%20BI%20Best%20Practices/README.md#11-multiple-excel-merging)|
+
+
+## 1. Power BI Report Development Process
 
 ![](https://github.com/SStej/Portfolio/blob/072d5c463d0b48cc0ef14558cb32fa95be1c01ed/Power%20BI%20Best%20Practices/Assets/Development.png)
 
-## Power BI Confusing Vocabulary for Users
+## 2. Power BI Confusing Vocabulary for Users
 
 ![](https://github.com/SStej/Portfolio/blob/072d5c463d0b48cc0ef14558cb32fa95be1c01ed/Power%20BI%20Best%20Practices/Assets/Vocab%201.png)
 ![](https://github.com/SStej/Portfolio/blob/072d5c463d0b48cc0ef14558cb32fa95be1c01ed/Power%20BI%20Best%20Practices/Assets/Vocab%202.png)
 
-## Report Wireframing
+## 3. Report Wireframing
 - Preparing a mockup of the report
   - List the information and KPI that are to be visualized
   - For each information type and KPI, decide on the type of visualization
@@ -18,7 +34,7 @@
 - Document requirements for each element
   - For each visualization and element document the type, filter settings, design settings, data source column(s)
 
-##	Data Cleaning 
+##	4. Data Cleaning 
 - Garbage In Garbage Out
   - We can only get expected result from Power BI if we perform data cleaning to ensure the data is in the expected format
 - Data Cleaning steps
@@ -32,7 +48,7 @@
     - Any column that are not meant for calculation should be treated as text
     - Align case for text values to be consistently upper or lower to avoid errors
 
-##  Query Folding
+##  5. Query Folding
 - Query folding in Power BI Power Query refers to the process of converting M code into native queries for the data source. This allows complex transformations to be executed directly on the data source engine, improving performance by using the data source’s processing power and reducing the data transferred to Power BI which means shorter load time
 ![](https://github.com/SStej/Portfolio/blob/fada2372ef3047f50bbc66bfa1eaafee654e4e9d/Power%20BI%20Best%20Practices/Assets/Query%20folding.png)
 
@@ -81,7 +97,7 @@
   - Removing characters in text
   - Merging or appending tables from a different source
 
-## Datetable
+## 6. Datetable
 -	The common practice is to create a datetime table using DAX and the merge with the datetime column of the data table. However, if the granularity is required down to the seconds level, it will create 31 million rows for each year, which causes serious performance issue to the report
 -	The best practice is to create one standard date table and one standard time table. Then create relationships between the date and time columns in the data table with the two time intelligence tables separately
 -	Create Date table
@@ -93,7 +109,7 @@
   -  Change the column title to Second of the day
   -     Time to second = TIMEVALUE(TIME(FLOOR(Time[Second of the day]/3600,1), MOD (Time[Second of the day]/3600),0))
 
-## Timezone
+## 7. Timezone
 - Sometimes the date setting in the data source is different to your location, it automatically converts to your location causing a shifted time data
 - Switching back to original time zone
   - Check the time zone of the data source (UTC+?)
@@ -101,7 +117,7 @@
   - Create a custom column with the following formula
   -     =Table.AddColumn(#”Name of Previous Step”, “Actual Date Time”, each Date.TimeDAte(DateTimeZone.SwitchZone([ReferenceDateColumn], Number of hours to be changed)), type date)
 
-## Connection Modes 
+## 8. Connection Modes 
 - Import
   - Data is highly compresses, optimized and then imported into Power BI semantic model
 
@@ -151,16 +167,30 @@
 - Scenarios and Recommendations
 ![](https://github.com/SStej/Portfolio/blob/fada2372ef3047f50bbc66bfa1eaafee654e4e9d/Power%20BI%20Best%20Practices/Assets/Connection%20modes.png)
 
-## Roles & access in Workspace/Reports/Semantic models/ App
+## 9. Roles & access in Workspace/Reports/Semantic models/ App
 
 ![](https://github.com/SStej/Portfolio/blob/fada2372ef3047f50bbc66bfa1eaafee654e4e9d/Power%20BI%20Best%20Practices/Assets/Roles%20and%20access.png)
 
-## Licenses – Where to publish reports for different license consumers?
+## 10. Licenses – Where to publish reports for different license consumers?
 
 ![](https://github.com/SStej/Portfolio/blob/fada2372ef3047f50bbc66bfa1eaafee654e4e9d/Power%20BI%20Best%20Practices/Assets/Where%20to%20publish%20report.png)
 
+## 11. Multiple Excel Merging
 
+In many cases, teams are using excel trackers or excel based data collection to record data for reporting. These excels are more often produced through the collaboration of multiple teams and departments resulting in multiple versions weekly or monthly. Normally teams would compile the data in these files to prepare their reporting which is time and labor intensive requiring at least 2-man days to produce. But this compilation and preparation time can be reduced by just using a trick in excel, which is files merging.
 
+These tracker files are standard, and the information stored are consistently saved in a standard format. As excel allows for a local folder to be the data source, the tracker files stored in one archive folder can be pulled into power query, combined, transformed to extract the data and prepare a report. The added benefit to this method is that any new file can be added to the archive folder and a simple refresh will update the pre-prepared report.
+One best practice when combining files is to avoid the helper query. Helper queries are created when Power Query uses the first files as an example to apply the combining transformation. If there are multiple combinations happening the query window looks unorganized.
+
+![](https://github.com/SStej/Portfolio/blob/fcf3415c4e2a590495eb3464d899597acf2de65c/Power%20BI%20Best%20Practices/Assets/Helper%20query.png)
+
+One way to avoid it is by creating a custom column and adding the following code to only extract the data files
+-     =Excel.Workbook([Content])
+Or 
+-     =CSV.Document([Content])
+This returns the data in the excel file as table and no helper queries are created
+
+![](https://github.com/SStej/Portfolio/blob/fcf3415c4e2a590495eb3464d899597acf2de65c/Power%20BI%20Best%20Practices/Assets/Files%20merging%20.png)
 
 
 
