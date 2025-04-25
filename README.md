@@ -18,7 +18,7 @@ Technical Skills: Excel(VBA, Macros and Office Script), MySQL, Alteryx, Power BI
 # Table of Contents
   - Past Project Experiences
   - [Best Practices](https://github.com/SStej/Portfolio/blob/f1d7771cac14e673e61d920cf82e4e8b3a1fa570/Power%20BI%20Best%20Practices/README.md)
-  - Power BI Projects
+  - [Power BI Projects](https://github.com/SStej/Portfolio/tree/6e09f253d0da97dc40ebfbc53066105f0eac6ce4/Power%20BI%20projects)
     
 # Previous Project Experiences
 Most of my past projects were created at client servers with sensitive information, so i have only shared the projects that I still had access to, with the dummy data shown. Other than these projects i have best practices i have collected and practice projects saved in this repo to show my skills 
