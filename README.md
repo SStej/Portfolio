@@ -19,7 +19,7 @@ Technical Skills: Excel(VBA, Macros and Office Script), MySQL, Alteryx, Power BI
   - [Project Experience](https://github.com/SStej/Portfolio/blob/main/README.md#project-experience)
   - [Best Practices](https://github.com/SStej/Portfolio/edit/main/README.md#best-practices)
     
-# Project Experience
+# Previous Project Experiences
 
 ## Project Portfolio Management
 
